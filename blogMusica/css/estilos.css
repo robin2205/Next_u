@@ -1,0 +1,130 @@
+.row{
+  margin: 0 auto;
+}
+/****************HEADER****************/
+.logo{
+  height: 120px;
+  padding: 2px;
+}
+.logo img{
+  width: 100%;
+  height: 100%;
+}
+.redes{
+  height: 120px;
+}
+.redes i{
+	width: 50px;
+	color: #b90c06;
+	text-align: center;
+	margin-top: 75px;
+}
+.redes i:hover{
+	background: #e4e4e4;
+	color: #0658b9;
+	border-radius: 30px;
+}
+
+/****************NAVEGACIÓN****************/
+.navegacion{
+  height: 65px;
+  padding: 5px;
+  margin: auto;
+}
+.navegacion nav{
+	background: #0f9a7d;
+	font-size: 18px;
+	font-weight: bold;
+}
+#navbar ul{
+	position: absolute;
+	margin-left: 25%;
+}
+#navbar ul li:hover{
+	display: block;
+	background: #e4e4e4;
+	border-radius: 30px;
+}
+#navbar ul li a{
+	color: #000000;
+}
+#navbar ul li a:hover{
+	color: #ee2121;
+}
+
+/****************CONTENIDOS****************/
+.general{
+  height: auto;
+  padding: 5px;
+}
+.contenido{
+  height: auto;
+  padding: 5px;
+}
+.articulo1 img{
+  float: right;
+  width: 50%;
+  padding: 5px;
+}
+.articulo2 img{
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.buscador{
+  height: auto;
+  padding: 5px;
+}
+.inp_buscar{
+  padding: 5px;
+}
+.demas{
+  padding: 5px;
+}
+.demas ul li a{
+  font-size: 18px;
+	font-weight: bold;
+  list-style: none;
+  text-decoration: none;
+}
+
+/****************MÓVILES****************/
+@media (max-width:420px){
+  .navegacion{
+    height: auto;
+    display: block;
+    position: relative;
+  }
+  #navbar ul{
+  	position: relative;
+  	margin-left: 0;
+  }
+  .menu_peque{
+    background: #b1b1b1;
+    border: none;
+  }
+  .general{
+    position: relative;
+  }
+  .redes{
+    height: auto;
+  }
+  .redes i{
+  	margin-top: 5px;
+  }
+  .contenido{
+    height: auto;
+    padding: 5px;
+  }
+  .articulo1 img{
+    float: none;
+    width: 100%;
+  }
+  .articulo2 img{
+    float: none;
+    width: 100%;
+  }
+  .buscador{
+    display: none;
+  }
+}

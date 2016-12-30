@@ -1,0 +1,120 @@
+body{
+	font-family: 'Lemonada',cursive;
+	font-size: 14px;
+	width: 100%;
+	height: 100%;
+}
+div{
+	padding: 2px;
+}
+h2{
+	font-family: 'Aclonica', sans-serif;
+	font-weight: bold;
+}
+h6{
+	font-family: 'Lemonada',cursive;
+	color: #171fda;
+}
+.fondo{
+	background-image: url("../imagenes/fondo.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.encabezado{
+	background-color: rgba(159, 203, 182, 0.9);
+	border-radius: 5px;
+}
+.button{
+	float: right;
+}
+/****************LOGO****************/
+.logo{
+	height: 120px;
+}
+.imagen{
+	width: 100%;
+	height: 80%;
+}
+.slogan{
+	width: 100%;
+	height: 20%;
+	text-align: right;
+}
+
+/****************LADO IZQUIERDO****************/
+.izquierda{
+	height: auto;
+	font-weight: bold;
+	background-color: rgba(159,203,182,0.7);
+	border-radius: 5px;
+	margin-left: -13px;
+}
+.opcion1{
+	height: auto;
+}
+.opcion2{
+	height: auto;
+}
+.fieldset{
+	margin: 0;
+	padding: 1px;
+	background-color: rgba(129,200,166,0.9);
+	border-radius: 5px;
+}
+.fieldset legend{
+	background-color: rgba(129,200,166,0);
+}
+.fieldset .row{
+	width: 100%;
+	height: 100%;
+}
+.row img{
+	width: 100%;
+	height: 100%;
+}
+#imagen1,#imagen2,#imagen3,#imagen4,#imagen5,#imagen6{
+	width: 100%;
+	height: 100px;
+}
+
+/****************LADO DERECHO****************/
+.derecha{
+	height: auto;
+	background-color: rgba(159, 203, 182, 0.8);
+	border-radius: 5px;
+	margin-right: -13px;
+}
+.derecha img{
+	width: 100;
+	height: 300px;
+}
+.derecha .img_perfil{
+	width: 30px;
+	height: 30px;
+}
+.derecha textarea{
+	height: 100px;
+}
+
+/****************MÓVILES****************/
+@media (max-width:420px){
+	body{
+		font-size: 12px;
+	}
+	.logo{
+		height: auto;
+	}
+	.izquierda{
+		margin-left: 0px;
+		margin-bottom: 2px;
+	}
+	.derecha{
+		margin-right: 0px;
+	}
+	.derecha img{
+		width: 100;
+		height: 200px;
+	}
+}
