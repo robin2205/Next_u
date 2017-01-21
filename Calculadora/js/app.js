@@ -7,6 +7,7 @@ var esperaMulti=true;
 var esperaDivi=true;
 var presionpunto=true;
 var contador=0;
+var positivo=true;
 
 function cambioCero(){
 	document.getElementById("0").style="width:28%;border:1px solid red;border-radius:12px;";
@@ -74,8 +75,6 @@ function cargarNumero(numero){
 		if(document.getElementById("display").textContent==0){
 			document.getElementById("display").innerHTML=numero;
 			contador++;}
-		else if(document.getElementById("display").textContent=="0."){
-			document.getElementById("display").innerHTML+=numero;}
 		else{
 			document.getElementById("display").innerHTML+=numero;
 			contador++;}
@@ -111,6 +110,8 @@ function dividir(){
 }
 
 function mostrarResultado(){
+	if(esperaDivi==false){
+		resultado=resultado.toFixed(5);}
 	document.getElementById("display").textContent=resultado;
 	esperaSuma=true;
 	esperaResta=true;
@@ -170,6 +171,22 @@ document.getElementById("punto").onclick=function(){
 		document.getElementById("display").innerHTML+=".";
 		contador++;
 		presionpunto=false;}
+}
+
+document.getElementById("sign").onclick=function(){
+	if(positivo==true){
+		var negativo=document.getElementById("display").textContent;
+		negativo=parseFloat(negativo);
+		negativo=negativo*(-1);
+		document.getElementById("display").innerHTML=negativo;
+		positivo=false;}
+	else{
+		var numPositivo=document.getElementById("display").textContent;
+		numPositivo=parseFloat(numPositivo);
+		numPositivo=numPositivo*(-1);
+		document.getElementById("display").innerHTML=numPositivo;
+		positivo=true;
+	}
 }
 
 document.getElementById("on").onclick=function(){
